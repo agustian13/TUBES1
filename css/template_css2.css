@@ -1,0 +1,36 @@
+/*ARTICLES*/
+.iteminfo
+{
+	font-size: 8pt;
+	padding-top: 1em;
+	color: #999999;
+}
+H1, H2, H3, H4, .componentheading, LEGEND
+{
+	font-weight: bold;
+	margin: 0 0 0.5em;
+}
+#main-content
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #FFFFFF;
+	padding-top: 10px;
+}
+/*FLEXSLIDER*/
+#slide-wrap
+{
+	padding: 10px 10px 0;
+	background-color: #FFFFFF;
+}
+.flex-caption
+{
+	color: #333333;
+	text-transform: none;
+	font-size: 12px;
+	font-weight: bold;
+	bottom: 30px;
+}
+.flexslider IMG
+{
+}

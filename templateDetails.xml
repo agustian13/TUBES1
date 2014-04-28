@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+
+<name>pt_olypssiun_free</name>
+<version>3.0</version>
+<creationDate>2014</creationDate>
+<author>plustheme</author>
+<authorEmail>info@plustheme.com</authorEmail>
+<authorUrl>http://www.plustheme.com</authorUrl>
+<copyright>plustheme</copyright>
+
+<description>
+<![CDATA[
+<link href="../templates/pt_olypssiun_free/admin/style.css" rel="stylesheet" type="text/css" media="all" />
+<p>Free Joomla! 2.5.x and Joomla 3.x Template from <a href="http://www.plustheme.com" target="_blank">plustheme.com</a> </p>
+<p>
+Upgrade <a href="http://plustheme.com/upgrade" target="_blank">here</a><br />
+Click here for <a href="http://demo25.plustheme.com/?template=pt_olypssiun_free" target="_blank">PRO demo</a><br />
+</p>
+<img src="../templates/pt_olypssiun_free/template_thumbnail.png" border="0" title="" alt=""/>
+]]>
+</description>
+
+<files>
+<filename>favicon.ico</filename>
+<filename>index.php</filename>
+<filename>component.php</filename>
+<filename>template_thumbnail.png</filename>
+<filename>template_preview.png</filename>
+<filename>templateDetails.xml</filename>
+
+<folder>admin</folder>
+<folder>html</folder>
+<folder>css</folder>
+<folder>scripts</folder>
+<folder>images</folder>
+<folder>language</folder>
+<folder>includes</folder>
+</files>
+
+<positions>
+<position>search</position>
+<position>left</position>
+<position>right</position>
+<position>pathway</position>
+<position>bottom1</position>
+<position>bottom2</position>
+<position>bottom3</position>
+<position>footer</position>
+<position>top_menu</position>
+<position>debug</position>
+</positions>
+
+<languages folder="language">
+<language tag="en-GB">en-GB/en-GB.tpl_pt_olypssiun_free.ini</language>
+</languages>
+
+<config>
+<fields name="params">
+
+<!-- ADVANCED OPTIONS -->
+<fieldset name="advanced">
+<field name="colorStyle" type="list" default="default" label="Template Color" description="Choose Color Style">
+<option value="default">Default</option>
+<option value="style1">Style1</option>
+<option value="style2">Style2</option>
+<option value="style3">Style3</option>
+</field>
+
+<field name="tpl_w" type="text" default="940" label="TEMPLATE_WIDTH" description="TEMPLATE_WIDTH_DESC" />
+<field name="left_w" type="text" default="210" label="LEFTCOLUMN_WIDTH" description="LEFTCOLUMN_WIDTH_DESC" />
+<field name="right_w" type="text" default="210" label="RIGHTCOLUMN_WIDTH" description="RIGHTCOLUMN_WIDTH_DESC" />
+
+<field name="logoFile" class="" type="media" default="" label="Logo" description="TPL_LOGO_DESC" />
+<field name="sitetitle"  type="text" default="" label="JGLOBAL_TITLE" description="JFIELD_ALT_PAGE_TITLE_LABEL" filter="string" />
+<field name="sitedescription"  type="text" default="" label="JGLOBAL_DESCRIPTION" description="JGLOBAL_SUBHEADING_DESC" filter="string" />
+<field name="logo_width" type="text" default="324" filter="string" size="20" label="Logo Width" description="Set the width of the logo in px (ex. 250px). Live it empty for default size" />
+<field name="logo_height" type="text" default="63" filter="string" size="20" label="Logo Height" description="Set the height of the logo in px (ex. 75px. Live it empty for default size)" />
+</fieldset>
+<!-- //ADVANCED OPTIONS -->
+
+<!-- CUSTOM SUFFIX -->
+<fieldset name="suffix_options" label="Module Suffix's">
+<field type="spacer" label="SUFFIX_NOTICE" />
+<field name="module_suffix_bg_color1" class="" type="color" default="#ffaa22" label="_color1" description="Edit suffix _color1" />
+<field name="module_suffix_bg_color2" class="" type="color" default="#ed145a" label="_color2" description="Edit suffix _color2" />
+<field name="module_suffix_bg_color3" class="" type="color" default="#7b0046" label="_color3" description="Edit suffix _color3" />
+<field name="module_suffix_bg_color4" class="" type="color" default="#9e005d" label="_color4" description="Edit suffix _color4" />
+<field name="module_suffix_bg_color5" class="" type="color" default="#eb2f2f" label="_color5" description="Edit suffix _color5" />
+</fieldset>
+<!-- CUSTOM SUFFIX -->
+
+<!-- SLIDESHOW -->
+<!-- ENABLE/DISABLE SLIDESHOW -->
+<fieldset name="slides" label="Slideshow">
+<field name="slideshow_text_color" class="" type="color" default="#08b6f0" label="Slideshow Text Color" description="Choose text color for slideshow text info" />
+<field name="googleFont_slideshow_desc" type="radio" class="btn-group btn-group-yesno" default="1" label="Choose Google Fonts" description="Enable/Disable google fonts for slideshow description">
+<option value="0">No</option>
+<option value="1">Yes</option>
+</field>
+<field name="googleFontName_slideshow_desc" class="" type="text" default="Play" label="Google Font Name" description="Example: Verdana, link to choose (http://www.google.com/fonts)" />
+<field name="menuid" type="menuitem"  multiple="true" size="10" default="0" label="Show/Hide Slideshow" description="Select Menu where to show the slideshow (Pres CTRL to slelect more than one item" >
+<option value="0">- DISABLE SLIDESHOW -</option>
+</field>
+
+<!-- SLIDESHOW ANIMATION -->
+<field type="spacer" hr="true" />
+<field name="animation" type="list" default="fade" label="Slideshow Animation" description="Choose the animation type for the slideshow" filter="word">
+<option value="fade">Fade</option>
+<option value="slide">Slide</option>
+</field>
+
+<!-- SLIDESHOW DIRECTION -->
+<field name="direction" type="list" default="horizontal" label="Slideshow Direction" description="Choose the direction type for the slideshow if you select slide animation" filter="word">
+<option value="horizontal">Horizontal</option>
+<option value="vertical">Vertical</option>
+</field>
+
+<!--SLIDESHOW PAGING CONTROL -->
+<field name="controlNav" type="radio" class="btn-group" default="0" label="Show Control Navigation" description="Show/hide the control navigation.">
+<option value="0">No</option>
+<option value="1">Yes</option>
+</field>
+
+<!--SLIDESHOW PREVIOUS/NEXT ICONTS -->
+<field name="directionNav" type="radio" class="btn-group" default="1" label="Previous/Next Navigation" description="Show/hide previous/next icons.">
+<option value="0">No</option>
+<option value="1">Yes</option>
+</field>
+
+<!--SLIDESHOW CHANGE IMAGE SPEED -->
+<field name="slideshowSpeed" type="text" default="5000" label="Slideshow Speed" description="Increase or decrease slideshow speed (default speed is 5000)" />
+
+<!-- SLIDE 1 -->
+<field type="spacer" hr="true" />
+<field name="Image1" label="Image 1" type="media"  description="Choose an image." />
+<field name="Link1" label="Link 1" type="text"  description="URL where the slider image will link." />
+<field name="Caption1" label="Caption 1" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+<!-- SLIDE 2 -->
+
+<field type="spacer" hr="true" />
+<field name="Image2" label="Image 2" type="media"  description="Choose an image." />
+<field name="Link2" label="Link 2" type="text"  description="URL where the slider image will link." />
+<field name="Caption2" label="Caption 2" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+<!-- SLIDE 3 -->
+
+<field type="spacer" hr="true" />
+<field name="Image3" label="Image 3" type="media"  description="Choose an image." />
+<field name="Link3" label="Link 3" type="text"  description="URL where the slider image will link." />
+<field name="Caption3" label="Caption 3" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+
+<!-- SLIDE 4 -->
+<field type="spacer" hr="true" />
+<field name="Image4" label="Image 4" type="media"  description="Choose an image." />
+<field name="Link4" label="Link 4" type="text"  description="URL where the slider image will link." />
+<field name="Caption4" label="Caption 4" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+
+<!-- SLIDE 5 -->
+<field type="spacer" hr="true" />
+<field name="Image5" label="Image 5" type="media"  description="Choose an image." />
+<field name="Link5" label="Link 5" type="text"  description="URL where the slider image will link." />
+<field name="Caption5" label="Caption 5" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+
+<!-- SLIDE 6 -->
+<field type="spacer" hr="true" />
+<field name="Image6" label="Image 6" type="media"  description="Choose an image." />
+<field name="Link6" label="Link 6" type="text"  description="URL where the slider image will link." />
+<field name="Caption6" label="Caption 6" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+
+<!-- SLIDE 7 -->
+<field type="spacer" hr="true" />
+<field name="Image7" label="Image 7" type="media"  description="Choose an image." />
+<field name="Link7" label="Link 7" type="text"  description="URL where the slider image will link." />
+<field name="Caption7" label="Caption 7" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+
+
+<!-- SLIDE 8 -->
+<field type="spacer" hr="true" />
+<field name="Image8" label="Image 8" type="media"  description="Choose an image." />
+<field name="Link8" label="Link 8" type="text"  description="URL where the slider image will link." />
+<field name="Caption8" label="Caption 8" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+
+<!-- SLIDE 9 -->
+<field type="spacer" hr="true" />
+<field name="Image9" label="Image 9" type="media"  description="Choose an image." />
+<field name="Link9" label="Link 9" type="text"  description="URL where the slider image will link." />
+<field name="Caption9" label="Caption 9" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+
+<!-- SLIDE 10 -->
+<field type="spacer" hr="true" />
+<field name="Image10" label="Image 10" type="media"  description="Choose an image." />
+<field name="Link10" label="Link 10" type="text"  description="URL where the slider image will link." />
+<field name="Caption10" label="Caption 10" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+
+<!-- SLIDE 11 -->
+<field type="spacer" hr="true" />
+<field name="Image11" label="Image 11" type="media"  description="Choose an image." />
+<field name="Link11" label="Link 11" type="text"  description="URL where the slider image will link." />
+<field name="Caption11" label="Caption 11" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+
+<!-- SLIDE 12 -->
+<field type="spacer" hr="true" />
+<field name="Image12" label="Image 12" type="media"  description="Choose an image." />
+<field name="Link12" label="Link 12" type="text"  description="URL where the slider image will link." />
+<field name="Caption12" label="Caption 12" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+
+<!-- SLIDE 13 -->
+<field type="spacer" hr="true" />
+<field name="Image13" label="Image 13" type="media"  description="Choose an image." />
+<field name="Link13" label="Link 13" type="text"  description="URL where the slider image will link." />
+<field name="Caption13" label="Caption 13" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+
+<!-- SLIDE 14 -->
+<field type="spacer" hr="true" />
+<field name="Image14" label="Image 14" type="media"  description="Choose an image." />
+<field name="Link14" label="Link 14" type="text"  description="URL where the slider image will link." />
+<field name="Caption14" label="Caption 14" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+
+<!-- SLIDE 15 -->
+<field type="spacer" hr="true" />
+<field name="Image15" label="Image 15" type="media"  description="Choose an image." />
+<field name="Link15" label="Link 15" type="text"  description="URL where the slider image will link." />
+<field name="Caption15" label="Caption 15" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+
+<!-- SLIDE 16 -->
+<field type="spacer" hr="true" />
+<field name="Image16" label="Image 16" type="media"  description="Choose an image." />
+<field name="Link16" label="Link 16" type="text"  description="URL where the slider image will link." />
+<field name="Caption16" label="Caption 16" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+
+<!-- SLIDE 17 -->
+<field type="spacer" hr="true" />
+<field name="Image17" label="Image 17" type="media"  description="Choose an image." />
+<field name="Link17" label="Link 17" type="text"  description="URL where the slider image will link." />
+<field name="Caption17" label="Caption 17" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+
+<!-- SLIDE 18 -->
+<field type="spacer" hr="true" />
+<field name="Image18" label="Image 18" type="media"  description="Choose an image." />
+<field name="Link18" label="Link 18" type="text"  description="URL where the slider image will link." />
+<field name="Caption18" label="Caption 18" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+
+<!-- SLIDE 19 -->
+<field type="spacer" hr="true" />
+<field name="Image19" label="Image 19" type="media"  description="Choose an image." />
+<field name="Link19" label="Link 19" type="text"  description="URL where the slider image will link." />
+<field name="Caption19" label="Caption 19" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+
+<!-- SLIDE 20 -->
+<field type="spacer" hr="true" />
+<field name="Image20" label="Image 20" type="media"  description="Choose an image." />
+<field name="Link20" label="Link 20" type="text"  description="URL where the slider image will link." />
+<field name="Caption20" label="Caption 20" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+</fieldset>
+<!-- //SLIDESHOW -->
+
+
+<!-- MODULE OPTIONS -->
+<fieldset name="modl_opt" label="More Options">
+<field type="spacer" label="ONLY_PRO" />	
+
+<!-- TEMPLATE WIDTH -->
+<field name="fluidContainer" type="radio" class="btn-group" default="0" label="TPL_FLUID_LABEL" description="Choose between static or fullscreen resolution">
+<option value="0" disabled="true">TPL_STATIC</option>
+<option value="1" disabled="true">TPL_FLUID</option>
+</field>
+
+<field name="templateColor" class="" disabled="true" type="color" default="#3b7bb9" label="TPL_COLOR_LABEL" description="Custom template color at your choice" />
+
+<field name="body_textcolor" class="" disabled="true" type="color" default="#333333" label="Body Text Color" description="Choose Body Text Color" />
+
+<field name="responsv" type="radio" class="btn-group" default="0" label="Enable Responsive" description="Eanable/Disable Responsive Layout">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+<field name="bootstrapfw" type="radio" class="btn-group" default="0" label="Load Bootstrap FW" description="Enable/Disable Bootstrap Framework">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+<field name="extens" type="radio" class="btn-group" default="0" label="Enable Extensions" description="Enable Extension Futures">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+<field name="templbg" type="radio" class="btn-group" default="0" label="Template Background" description="Enable/Disable or upload template background">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+<field name="menuopt" type="radio" class="btn-group" default="0" label="Horizontal Menu" description="Extra Menu Options">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+<field name="googlfonts" type="radio" class="btn-group" default="0" label="Google Fonts" description="Load more than 600 different google fonts">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+<field name="fontsizee" type="radio" class="btn-group" default="0" label="Font Size" description="Increase/Decrease font size">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+<field name="typogr" type="radio" class="btn-group" default="0" label="Typography" description="Large typography">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+<field name="modposit" type="radio" class="btn-group" default="0" label="Extra Positions" description="Load more positions">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+<field name="analytcss" type="radio" class="btn-group" default="0" label="Google Analytics" description="Google analytics trackging code">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+
+
+<field name="copyr_ft" type="radio" class="btn-group" default="0" label="Remove Footer Link" description="Remove footer copyrights">
+<option value="0" disabled="true">No</option>
+<option value="1" disabled="true">Yes</option>
+</field>
+</fieldset>
+
+</fields>
+</config>
+</extension>
