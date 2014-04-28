@@ -2,7 +2,6 @@
 
 # copyright (c) plustheme.com  all rights reserved   
 # license -  licensed under  gnu/gpl v2                        
-# website: http://www.plustheme.com  
 
 defined('_JEXEC') or die;
 
