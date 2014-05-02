@@ -1,3 +1,6 @@
+<html>
+<head>
+<title> Agung megantara </title>
 <?php
 /**
  * @version		$Id: default_component.php 21322 2011-05-11 01:10:29Z dextercowley $
